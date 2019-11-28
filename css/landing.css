@@ -1,0 +1,62 @@
+@media screen {
+    <!--magiceshi kod joyto kara video-background-holder da e po malko height-->
+}
+
+.video-background-holder {
+    position: relative;
+    height: calc(100vh - 20px);
+    min-height: 0vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+.video-background-holder video {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    min-height: 100vh;
+    min-width: 80vw;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.video-background-content{
+    color: white;
+    text-shadow: black 2px 2px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+#wrap-like-a-jumbotron-yeah-boii{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.video-background-holder h1 {
+}
+.video-background-holder p {
+    text-shadow: black 1px 1px;
+}
+section{
+    padding: 25px 0px;
+}
+section h1{
+    text-align: center;
+}
+#othergiants{
+    margin-top: -7px;
+    text-align: center;
+}
+.picture{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
