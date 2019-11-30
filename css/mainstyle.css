@@ -11,7 +11,7 @@ nav{
     width: 100vw;
     z-index: 3;
 }
-ul{
+nav ul{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
