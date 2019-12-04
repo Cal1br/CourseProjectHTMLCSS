@@ -1,0 +1,29 @@
+p{
+    padding: 20px;
+}
+#civs a:hover{
+    text-decoration: none;
+    color: black;
+}
+#civs a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#civs{
+    display: flex;
+}
+#civs ul{
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+#civs ul li{
+    margin: 5px 3vw;
+    display: flex;
+}

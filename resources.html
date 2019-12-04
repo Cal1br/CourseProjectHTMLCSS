@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        var $magic = $(".magic"),
+            magicWHalf = $magic.width() / 2;
+        $(document).on("mousemove", function(e) {
+            $magic.css({"left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf});
+        });
+    });
+    </script>
+
+</head>
+<body>
+    <div class="scene">
+        <h1>Look Around!</h1>
+        <h2>There are four types of resources: wood, food, gold and stone <br>
+            <a href="gameplay.html">Go back</a></h2>
+        <div class="magic"></div>
+    </div>
+
+</body>
+</html>

@@ -1,10 +1,33 @@
-@media screen {
-    <!--magiceshi kod joyto kara video-background-holder da e po malko height-->
+
+@media screen and (max-width: 768px) {
+    .video-background-holder {
+        display: none;
+    }
+    .container{
+        margin-top: 20px;
+    }
 }
 
+@media screen and (max-width: 992px) {
+
+    .video-background-holder{
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 1300px) {
+
+    .video-background-holder{
+        height: 76vh;
+    }
+}
+@media screen and (max-width: 1600px) {
+
+    .video-background-holder{
+        height: 76vh;
+    }
+}
 .video-background-holder {
     position: relative;
-    height: calc(100vh - 20px);
     min-height: 0vh;
     width: 100%;
     overflow: hidden;
@@ -17,7 +40,7 @@
     bottom: 0;
     top: 50%;
     left: 50%;
-    min-height: 100vh;
+    min-height: 40vh;
     min-width: 80vw;
     width: 100vw;
     height: auto;

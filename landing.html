@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
+    <meta name="viewport" charset="UTF-8">
     <title>Age of Empires II Fan page</title>
     <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--CDN Bootsrap 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--CDN Bootsrap 4 end-->
+
+    <script>
+        var videoStorage = [
+                '//media.w3.org/2010/05/sintel/trailer',
+                '//techslides.com/demos/sample-videos/small',
+                '//fat.gfycat.com/DazzlingCompleteAnkole',
+                '//zippy.gfycat.com/HeavyPlumpIvorybilledwoodpecker'
+            ],
+            video = document.querySelector('video'),
+            // choose one random url from our storage as the active video
+            activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];
+    </script>
 </head>
 <header>
 <div>
         <nav>
             <ul class="lead">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="landing.html"><img src="elements/mainlogo.png" alt="Landing"></a></li>
                 <li><a href="gameplay.html">Gameplay</a></li>
             </ul>
         </nav>
         <div class="video-background-holder">
             <video autoplay="autoplay" muted="muted" loop="loop">
-                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                <source src="videos/grandbattle.mp4" type="video/mp4">
             </video>
             <div class="video-background-content h-100">
                 <div class="d-flex h-100 text-center justify-content-center flex-column">
@@ -45,7 +59,7 @@
             published by Microsoft.
         </p>
         <p>The player has control over a society and guides them through four different time periods or <a
-                href="ages.html">"ages"</a>. The game
+                href="gameplayelements/ages.html">"ages"</a>. The game
             begins in the Dark Age, where very few buildings and units are available. After a short time when
             requirements
             are met, the user gains the ability to advance their civilization beginning with the Feudal Age, where more
@@ -90,6 +104,14 @@
         <hr>
     </section>
 </div>
-
+<footer>
+    <ul>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+        <li><a href="#" class="fab fa-google"></a></li>
+        <li><a href="#" class="fab fa-reddit"></a></li>
+    </ul>
+<p>&copy; All rights reserved!</p>
+</footer>
 </body>
 </html>

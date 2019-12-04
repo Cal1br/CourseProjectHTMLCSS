@@ -14,66 +14,47 @@
     <script>
         function loadData(data) {
             var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
+            xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("main").innerHTML = this.responseText;
                 }
             };
-            xhttp.open("GET", "gameplayelements/" + data, true);
+            xhttp.open("GET",data, true);
             xhttp.send();
         }
+        document.onload = loadData("ages.html");
     </script>
 </head>
 <body>
-<header>
-    <nav>
-        <ul class="lead">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="landing.html"><img src="elements/mainlogo.png" alt="Landing"></a></li>
-            <li><a href="gameplay.html">Gameplay</a></li>
+    <header>
+        <nav>
+            <ul class="lead">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="landing.html"><img src="elements/mainlogo.png" alt="Landing"></a></li>
+                <li><a href="gameplay.html">Gameplay</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="horizontalRuler" id="horizontal">
+    <div id="kaka" class="container">
+        <p>
+            The game was mainly praised for it's revolutionary gameplay. Here you can view some of it's main <components class=""></components>
+        </p>
+    </div>
+    <hr>
+    <section>
+        <ul>
+            <li><a href="#" onclick="loadData('ages.html')">Ages</a></li>
+            <li><a href="#" onclick="loadData('civilizations.html')">Civilizations</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="#" onclick="loadData('units.html')">Units</a></li>
+            <li><a href="#">Technologies</a></li>
+            <li><a href="#">Buildings</a></li>
+            <li><a href="#">Game modes</a></li>
         </ul>
-    </nav>
-</header>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur cum deleniti deserunt dicta eius
-    eveniet harum id ipsum iure, magni nemo nobis nostrum odio quas qui quo quos reiciendis repudiandae, tempora ullam
-    voluptas voluptatem, voluptatibus? Accusantium ad autem blanditiis dolor, dolore eius esse excepturi ipsum nam, non
-    provident vero. A, accusantium aperiam cupiditate delectus dignissimos eius eligendi expedita maxime molestias
-    mollitia nam nesciunt provident quae qui quia saepe, sequi tempore velit vitae voluptatem! Animi ea hic modi
-    nesciunt. Adipisci alias commodi deleniti dignissimos fugit inventore nulla provident voluptate. Expedita laudantium
-    odio optio quia reiciendis. Animi aperiam aut beatae blanditiis corporis doloremque hic impedit inventore ipsa
-    magnam minima minus natus necessitatibus quasi repellat sequi, sunt temporibus voluptas voluptatibus voluptatum.
-    Debitis explicabo magni maxime nihil numquam officiis placeat ratione? Ab animi assumenda autem dicta enim et eum,
-    explicabo fugit hic officiis optio perferendis, porro quam quibusdam quidem quisquam quos ratione, repellat
-    reprehenderit repudiandae sunt temporibus unde. Asperiores exercitationem illo nesciunt nihil nisi perferendis quo.
-    A aliquam consequatur cum deleniti laborum quam reiciendis reprehenderit repudiandae? Magnam molestias nihil optio
-    quibusdam quisquam, veritatis. Dolore eos ex expedita laboriosam modi nisi provident quaerat reprehenderit sunt.
-    Atque, culpa distinctio ea illo impedit laudantium placeat possimus quam, quod recusandae reiciendis sapiente sunt
-    ut. Alias distinctio dolor doloribus ipsum labore libero magnam mollitia nisi quasi. Ab aliquam aperiam autem
-    corporis debitis ipsam labore laboriosam libero maxime molestias mollitia nesciunt nostrum, quas repellat
-    repellendus tempora ullam. Aliquam architecto, cupiditate delectus deleniti eligendi et ex excepturi explicabo illo,
-    ipsa maiores natus non nostrum obcaecati officiis optio quisquam repellat sit soluta vel, veniam voluptatibus
-    voluptatum? Aliquam, assumenda eveniet harum illo molestias odit quasi vitae voluptates. Adipisci, aliquam at
-    debitis dolor doloribus ducimus eos, esse eum eveniet facilis fuga incidunt ipsam ipsum itaque labore maiores maxime
-    modi molestiae quaerat quas quia recusandae saepe sapiente sed sunt! Atque culpa cum deserunt dolore neque nostrum
-    officia quam repellat. A aspernatur error laboriosam odit praesentium. Amet architecto, atque cum, eaque eius, error
-    eum eveniet exercitationem facilis harum labore natus odio perspiciatis quae quibusdam quis velit voluptas
-    voluptatum? Atque consequatur corporis ducimus, eius expedita facilis illum laudantium maiores molestiae, neque
-    optio recusandae rem sit! At consequuntur dolore ducimus error in iure iusto labore minus modi nam nemo nihil nisi
-    nostrum perspiciatis, porro quae, saepe sint soluta tenetur ullam, unde voluptatem voluptates? Accusantium delectus
-    distinctio est et id ipsam maiores molestias quibusdam soluta ullam. Autem, quasi.</p>
-<aside>
-    <ul>
-        <li><a href="#">Ages</a></li>
-        <li><a href="#" onclick="loadData('civilizations.html');return false">Civilizations</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="">Units</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Buildings</a></li>
-        <li><a href="#">Game modes</a></li>
-    </ul>
-</aside>
-<main id="main">
+    </section>
+    <main id="main">
+    </main>
 
-</main>
 </body>
 </html>
