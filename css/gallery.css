@@ -1,0 +1,33 @@
+main{
+    margin-top: 40px;
+    display: flex;
+
+}
+main ul li img{
+    height: auto;
+    width: 640px;
+    border-radius: 25px;
+}
+main a:hover{
+    text-decoration: none;
+    color: black;
+}
+main ul{
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+main ul li{
+    padding: 15px;
+    display: flex;
+}
+
+@media screen and (max-width: 682px) {
+
+    main ul li img{
+        width: 350px;
+    }
+}

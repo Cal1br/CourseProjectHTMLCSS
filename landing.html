@@ -15,103 +15,121 @@
     <!--CDN Bootsrap 4 end-->
 
     <script>
-        var videoStorage = [
-                '//media.w3.org/2010/05/sintel/trailer',
-                '//techslides.com/demos/sample-videos/small',
-                '//fat.gfycat.com/DazzlingCompleteAnkole',
-                '//zippy.gfycat.com/HeavyPlumpIvorybilledwoodpecker'
-            ],
-            video = document.querySelector('video'),
-            // choose one random url from our storage as the active video
-            activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];
+        function loadVideo() {
+            var videoStorage = [
+                    'videos/farming',
+                    'videos/grandbattle',
+                    'videos/paladinsvsarchers',
+                    'videos/trebuchesvscastle',
+                    'videos/waterbattle'
+                ],
+                video = document.querySelector('video'),
+                // choose one random url from our storage as the active video
+                activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];
+                video.setAttribute('src', activeVideoUrl + '.mp4');
+            video.load();
+            video.play();
+        }
+
+        window.onload = function () {
+            loadVideo()
+        };
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </head>
-<header>
-<div>
-        <nav>
-            <ul class="lead">
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="landing.html"><img src="elements/mainlogo.png" alt="Landing"></a></li>
-                <li><a href="gameplay.html">Gameplay</a></li>
-            </ul>
-        </nav>
-        <div class="video-background-holder">
-            <video autoplay="autoplay" muted="muted" loop="loop">
-                <source src="videos/grandbattle.mp4" type="video/mp4">
-            </video>
-            <div class="video-background-content h-100">
-                <div class="d-flex h-100 text-center justify-content-center flex-column">
-                    <div id="wrap-like-a-jumbotron-yeah-boii">
-                        <h1 class="display-1">Age of Empires II</h1>
-                        <p>A fan page for my course project</p>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul class="lead">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="landing.html"><img src="elements/mainlogo.png" alt="Landing"></a></li>
+                    <li><a href="gameplay.html">Gameplay</a></li>
+                </ul>
+            </nav>
+            <div class="video-background-holder">
+                <video autoplay="autoplay" muted="muted" loop="loop">
+
+                    <source>
+                </video>
+                <div class="video-background-content h-100">
+                    <div class="d-flex h-100 text-center justify-content-center flex-column">
+                        <div id="wrap-like-a-jumbotron-yeah-boii">
+                            <h1 class="display-1">Age of Empires II</h1>
+                            <p>A fan page for my course project</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-</div>
-</header>
-<div class="container">
-    <section>
-        <p>
-            Age of Empires II: The Age of Kings is a real-time strategy computer game set in the Middle Ages. It was
-            released in 1999, and is the second main title of the Age of Empires series developed by Ensemble Studios
-            and
-            published by Microsoft.
-        </p>
-        <p>The player has control over a society and guides them through four different time periods or <a
-                href="gameplayelements/ages.html">"ages"</a>. The game
-            begins in the Dark Age, where very few buildings and units are available. After a short time when
-            requirements
-            are met, the user gains the ability to advance their civilization beginning with the Feudal Age, where more
-            upgrades, buildings, and units become available. The next age is the Castle Age, in which the powerful
-            Castle
-            may be built, and used to produce powerful units including the unique unit of each civilization. Finally,
-            the
-            user can reach the Imperial Age, which is reminiscent of the early years of the Renaissance. Once the user
-            has
-            reached the Imperial Age, they gain access to all the upgrades, units, and buildings that may be built and
-            researched for their specific civilization.</p>
-        <hr>
+    </header>
+    <div class="container">
+        <section>
+            <p>
+                Age of Empires II: The Age of Kings is a real-time strategy computer game set in the Middle Ages. It was
+                released in 1999, and is the second main title of the Age of Empires series developed by Ensemble Studios
+                and
+                published by Microsoft.
+            </p>
+            <p>The player has control over a society and guides them through four different time periods or <a
+                    href="gameplayelements/ages.html">"ages"</a>. The game
+                begins in the Dark Age, where very few buildings and units are available. After a short time when
+                requirements
+                are met, the user gains the ability to advance their civilization beginning with the Feudal Age, where more
+                upgrades, buildings, and units become available. The next age is the Castle Age, in which the powerful
+                Castle
+                may be built, and used to produce powerful units including the unique unit of each civilization. Finally,
+                the
+                user can reach the Imperial Age, which is reminiscent of the early years of the Renaissance. Once the user
+                has
+                reached the Imperial Age, they gain access to all the upgrades, units, and buildings that may be built and
+                researched for their specific civilization.</p>
+            <hr>
 
-        <h1 class="display-2">A Classic</h1>
-        <p class="lead othergiants">It's name is there together with the other giants: <br>Starcraft, Quake, Diablo II
-            and many more...</p>
-        <p> Reception of The Age of Kings was highly positive. The significant number of new features was
-            praised, as were the gameplay improvements. The Age of Kings received "universal acclaim", according to
-            video game review aggregator Metacritic. The game was a complete hit. Most of us can probably recall the
-            time when we played it when we were little. Even now, even after 20 years the game remains alive with an
-            active and dedicated community.
-        </p>
-        <img class="picture" src="elements/picturecastle.jpg" alt="">
-        <hr>
-        <h1 class="display-2">Relive History</h1>
-        <p class="lead othergiants">Place yourself amongst the greatest leaders in history</p>
-        <p>The game features an extensive campaign mode in which you can play as a medieval ruler eg: <a
-                href="https://en.wikipedia.org/wiki/Attila">Attila
-            the Hun</a>, <a href="https://en.wikipedia.org/wiki/Alaric_I">Alaric</a>, <a
-                href="https://en.wikipedia.org/wiki/El_Cid">El Cid</a>, <a
-                href="https://en.wikipedia.org/wiki/Moctezuma_II">Montezuma</a> and many more. There are many cities to
-            burn and villages to be razed.
-        </p>
-        <img class="picture" src="elements/Atillathehun.png" alt="">
-        <hr>
-        <h1 class="display-2">Become a Pro</h1>
-        <p class="lead othergiants">Climb the ladder of competitive play and prove your worth</p>
-        <p> The game still has an active and mature community. Almost everyone has or is playing competitively trying to be
-            the best in the world. An ELO system calculates how good any given player is. But beware because the climb is
-            hard and only the very dedicated will succeed.</p>
-        <img class="picture" src="elements/proscene.png" alt="">
-        <hr>
-    </section>
-</div>
-<footer>
-    <ul>
-        <li><a href="#" class="fa fa-facebook"></a></li>
-        <li><a href="#" class="fab fa-twitter"></a></li>
-        <li><a href="#" class="fab fa-google"></a></li>
-        <li><a href="#" class="fab fa-reddit"></a></li>
-    </ul>
-<p>&copy; All rights reserved!</p>
-</footer>
+            <h1 class="display-2">A Classic</h1>
+            <p class="lead othergiants">It's name is there together with the other giants: <br>Starcraft, Quake, Diablo II
+                and many more...</p>
+            <p> Reception of The Age of Kings was highly positive. The significant number of new features was
+                praised, as were the gameplay improvements. The Age of Kings received "universal acclaim", according to
+                video game review aggregator Metacritic. The game was a complete hit. Most of us can probably recall the
+                time when we played it when we were little. Even now, even after 20 years the game remains alive with an
+                active and dedicated community.
+            </p>
+            <img class="picture" src="elements/picturecastle.jpg" alt="">
+            <hr>
+            <h1 class="display-2">Relive History</h1>
+            <p class="lead othergiants">Place yourself amongst the greatest leaders in history</p>
+            <p>The game features an extensive campaign mode in which you can play as a medieval ruler eg: <a
+                    href="https://en.wikipedia.org/wiki/Attila">Attila
+                the Hun</a>, <a href="https://en.wikipedia.org/wiki/Alaric_I">Alaric</a>, <a
+                    href="https://en.wikipedia.org/wiki/El_Cid">El Cid</a>, <a
+                    href="https://en.wikipedia.org/wiki/Moctezuma_II">Montezuma</a> and many more. There are many cities to
+                burn and villages to be razed.
+            </p>
+            <img class="picture" src="elements/Atillathehun.png" alt="">
+            <hr>
+            <h1 class="display-2">Become a Pro</h1>
+            <p class="lead othergiants">Climb the ladder of competitive play and prove your worth</p>
+            <p> The game still has an active and mature community. Almost everyone has or is playing competitively trying to
+                be
+                the best in the world. An ELO system calculates how good any given player is. But beware because the climb
+                is
+                hard and only the very dedicated will succeed.</p>
+            <img class="picture" src="elements/proscene.png" alt="">
+            <hr>
+        </section>
+        <a onclick="topFunction()" href="#"><img id="arrow" src="elements/up-arrow.png" alt=""></a>
+    </div>
+    <footer>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-reddit"></a>
+        <p>&copy; All rights reserved!</p>
+    </footer>
 </body>
 </html>

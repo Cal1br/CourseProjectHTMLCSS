@@ -1,5 +1,7 @@
 p{
     padding: 20px;
+    text-align: center;
+    margin: auto;
 }
 #civs a:hover{
     text-decoration: none;
@@ -26,4 +28,8 @@ p{
 #civs ul li{
     margin: 5px 3vw;
     display: flex;
+}
+#civs ul li a:hover{
+    color: crimson;
+    text-shadow: crimson 0 1px;
 }

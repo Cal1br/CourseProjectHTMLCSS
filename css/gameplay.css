@@ -4,9 +4,6 @@
 nav{
     margin-bottom: 50px;
 }
-.horizontalRuler{
-    /* media za da izchezne*/
-}
 #kaka{
     text-align: center;
     z-index: 20000;
@@ -26,18 +23,22 @@ section ul {
 section ul li{
     text-align: center;
     width: 200px;
-    border: solid black 1px ;
+    border-bottom: solid crimson 2px;
 }
 section ul li:hover{
-    background-color: greenyellow;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    background-color: crimson;
 }
 section ul li a{
-    padding: 5 20px;
+    overflow: hidden;
+    padding: 5px 50px;
     color: black;
     text-decoration: none;
 }
 section ul li a:hover{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 main{
@@ -46,4 +47,36 @@ main{
     border-radius: 25px;
     border: solid black 1px;
 }
-/*@media section da stane menu */
+
+footer{
+    margin-top: 30px;
+}
+#responsive a .fa{
+    color: crimson;
+}
+#responsive{
+    color: crimson;
+    display: none;
+    text-decoration: none;
+    font-size: 80px;
+    text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+    section ul{
+        flex-flow: column;
+    }
+    section ul li{
+        width: 60vw;
+        border: 1px white solid;
+        background-color: crimson;
+    }
+    section ul li a{
+        color: white;
+    }
+    section ul li:hover{
+        width: 65vw;
+        border-radius: 25px;
+    }
+
+}
